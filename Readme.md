@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Евгений Товкач](https://up.htmlacademy.ru/htmlcss/34/user/1566365).
-* Наставник: `[Наталья Зотова](https://htmlacademy.ru/profile/id1079951)`.
+* Наставник: [Наталья Зотова](https://htmlacademy.ru/profile/id1079951).
 
 ---
 
