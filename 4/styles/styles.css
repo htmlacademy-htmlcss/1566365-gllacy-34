@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format(woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navigation-link {
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.navigation-catalog-item a {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.navigation-phone {
+  line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.navigation-user-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.slider-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-item p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  border-radius: 26px;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  text-align: center;
+  background-color: #FCFCFC;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.button-other {
+  background: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  color: #FCFCFC;
+
+}
+
+.title-block {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.gift-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gift-item-raspberry {
+  background-image: url("../images/gift-raspberry.png");
+  background-repeat: no-repeat;
+}
+
+.gift-item-marshmallow {
+  background-image: url("../images/gift-marshmallow.png");
+  background-repeat: no-repeat;
+}
+
+.product-wrapper {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.product-desc {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #565C66;
+}
+
+.advantage-item {
+  color: #565C66;
+  list-style-type: none;
+}
+
+.advantage-container {
+  background-image: url("../images/adventage.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog-text {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.blog-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.blog {
+  background-image: url("../images/news.jpg");
+  background-repeat: no-repeat;
+}
+
+.subscription {
+  background-image: url("../images/subscription.jpg");
+  background-repeat: no-repeat;
+}
+
+.subscription-descript {
+  color: #565C66
+}
+
+.delivery {
+  background-image: url("../images/delivery.jpg");
+  background-repeat: no-repeat;
+}
+
+.delivery-text {
+  color: #565C66
+}
+
+.delivery-form-text {
+  color: #565C66
+}
+
+.delivery-form-label {
+  font-weight: 700;
+}
+
+.contacts {
+  background-image: url("../images/contacts.jpg");
+  background-repeat: no-repeat;
+}
+
+.contacts-text {
+  color: #565C66
+}
+
+.contacts-text-small {
+  font-size: 14;
+  line-height: 20px;
+  color: #565C66
+}
+
+.contacts-address {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts-phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.information-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.information-link-like {
+  font-weight: 700;
+}
+
+.copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copyright-text a {
+  border-bottom: 1px solid #2D3440;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-link {
+  color: #2D3440;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs-link-current {
+  border-bottom: 1px solid #2D3440;
+}
+
+.filter {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.button-filter {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.pagination-link {
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.pagination-link-current {
+  background: #FCFCFC;
+  border-radius: 76px;
+}
