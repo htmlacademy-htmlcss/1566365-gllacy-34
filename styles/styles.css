@@ -42,12 +42,21 @@ body {
   min-height: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  font-weight: 400;
+  font-weight: 400fmain;
   font-size: 16px;
   line-height: 22px;
   font-family: "Inter", sans-serif;
   color: #2d3440;
   background-color: #feafc3;
+}
+
+.main-container  {
+	flex-grow: 1;
+}
+
+.main {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 img {
@@ -73,6 +82,23 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 553px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 431px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -102,6 +128,11 @@ img {
   text-decoration: none;
 }
 
+.slider {
+  margin: 0;
+  padding: 0;
+}
+
 .slider-title {
   font-weight: 900;
   font-size: 36px;
@@ -121,7 +152,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  font-family: $font;
+  font-family: font;
   text-align: center;
   color: #2d3440;
   text-decoration: none;
@@ -148,6 +179,14 @@ img {
   text-align: center;
 }
 
+.gift-list {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+  margin: 0;
+  padding: 0;
+}
+
 .gift-title {
   font-weight: 700;
   font-size: 24px;
@@ -162,6 +201,13 @@ img {
 .gift-item-marshmallow {
   background-image: url("../images/gift-marshmallow.png");
   background-repeat: no-repeat;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  padding: 0 30px;
 }
 
 .product-wrapper {
@@ -189,6 +235,17 @@ img {
 
 .advantage-container {
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+  margin: 0;
+  padding: 0;
 }
 
 .blog-text {
@@ -221,6 +278,9 @@ img {
 .delivery {
   background-image: url("../images/delivery.jpg");
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .delivery-text {
@@ -238,6 +298,9 @@ img {
 .contacts {
   background-image: url("../images/contacts.jpg");
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .contacts-text {
@@ -321,4 +384,46 @@ img {
 
 .pagination-link-current {
   background: #FCFCFC;
+}
+
+.page-footer {
+  display: flex;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  display: flex;
+  width: 379px;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter {
+  display: flex;
+  width: 823px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog {
+  display: flex;
+  width: 1170px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1365px;
+  padding: 0;
+  margin: 0;
 }
