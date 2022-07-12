@@ -15,15 +15,14 @@
         <img class="logo" src="images/icon/logo.svg" width="137px" height="56px" alt="Gllasy Shop">
       </a>
       <ul class="navigation-list list-reset">
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-current navigation-link-drop" href="catalog.html">Каталог</a>
-
+        <li class="navigation-item navigation-item-drop">
+          <a class="navigation-link" href="catalog.html">Каталог</a>
           <!-- navigation-list-drop-open открывает блок navigation-list-drop -->
           <div class="navigation-list-drop">
             <h3>Новинки</h3>
             <ul class="navigation-catalog list-reset">
               <li class="navigation-catalog-item">
-                <a class="navigation-catalog-link navigation-catalog-link-current">Сливочное</a>
+                <a class="navigation-catalog-link">Сливочное</a>
               </li>
               <li class="navigation-catalog-item">
                 <a class="navigation-catalog-link" href="#">Щербеты</a>
@@ -56,9 +55,9 @@
             </svg>
           </a>
 
-          <!-- popover-open показывает всплывающее окно -->
-          <div class="popover search">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <!-- navigation-user-container-open открывает вспылвающее окно -->
+          <div class="navigation-user-container search">
+            <form class="search-form" action="https://echo.htmlacademy" method="get">
               <label class="visually-hidden" for="form-search">Поиск</label>
               <input class="form-input search-input" type="search" id="form-search" placeholder="Поиск по сайту">
               <button type="submit" class="visually-hidden">Найти</button>
@@ -75,7 +74,7 @@
             <span>Вход</span>
           </a>
 
-          <!-- popover-open показывает всплывающее окно -->
+          <!-- navigation-user-container-open открывает вспылвающее окно -->
           <div class="navigation-user-container login">
             <h2 class="navigation-user-title">Личный кабинет</h2>
             <form class="login-form" action="https://echo.htmlacademy" method="post">
@@ -105,7 +104,7 @@
             <span>2 товара</span>
           </a>
 
-          <!-- popover-open показывает всплывающее окно -->
+          <!-- navigation-user-container-open открывает вспылвающее окно -->
           <div class="navigation-user-container card">
             <h2 class="navigation-user-title">Корзина</h2>
             <ul class="card-list list-reset">
@@ -136,15 +135,10 @@
                 </button>
               </li>
             </ul>
-
             <div class="card-wrapper">
-              <button class="button button-other" type="button">Оформить заказ</button>
-              <span class="cart-total">Итого: 790 ₽</span>
+              <button class="button button-other" type="submit">Оформить заказ</button>
+              <span class="card-total">Итого: 790 ₽</span>
             </div>
-          </div>
-          <!-- popover-open показывает всплывающее окно. !-->
-          <div class="popover cart-empty">
-            <p>Ваша корзина пока пуста</p>
           </div>
         </li>
       </ul>
