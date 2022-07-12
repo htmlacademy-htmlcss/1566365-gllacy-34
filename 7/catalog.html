@@ -16,13 +16,14 @@
       </a>
       <ul class="navigation-list list-reset">
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-drop navigation-link-catalog" href="catalog.html">Каталог</a>
+          <a class="navigation-link navigation-link-current navigation-link-drop" href="catalog.html">Каталог</a>
+
           <!-- navigation-list-drop-open открывает блок navigation-list-drop -->
           <div class="navigation-list-drop">
             <h3>Новинки</h3>
             <ul class="navigation-catalog list-reset">
               <li class="navigation-catalog-item">
-                <a class="navigation-catalog-link">Сливочное</a>
+                <a class="navigation-catalog-link navigation-catalog-link-current">Сливочное</a>
               </li>
               <li class="navigation-catalog-item">
                 <a class="navigation-catalog-link" href="#">Щербеты</a>
@@ -53,8 +54,16 @@
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M1.66 6.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z" />
             </svg>
-
           </a>
+
+          <!-- popover-open показывает всплывающее окно -->
+          <div class="popover search">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="form-search">Поиск</label>
+              <input class="form-input search-input" type="search" id="form-search" placeholder="Поиск по сайту">
+              <button type="submit" class="visually-hidden">Найти</button>
+            </form>
+          </div>
         </li>
         <li class="navigation-user-item">
           <a class="navigation-user-link navigation-user-link-login" href="#">
@@ -65,6 +74,8 @@
             </svg>
             <span>Вход</span>
           </a>
+
+          <!-- popover-open показывает всплывающее окно -->
           <div class="navigation-user-container login">
             <h2 class="navigation-user-title">Личный кабинет</h2>
             <form class="login-form" action="https://echo.htmlacademy" method="post">
@@ -93,6 +104,8 @@
             </svg>
             <span>2 товара</span>
           </a>
+
+          <!-- popover-open показывает всплывающее окно -->
           <div class="navigation-user-container card">
             <h2 class="navigation-user-title">Корзина</h2>
             <ul class="card-list list-reset">
@@ -123,10 +136,15 @@
                 </button>
               </li>
             </ul>
+
             <div class="card-wrapper">
-              <button class="button button-other" type="submit">Оформить заказ</button>
-              <span class="card-total">Итого: 790 ₽</span>
+              <button class="button button-other" type="button">Оформить заказ</button>
+              <span class="cart-total">Итого: 790 ₽</span>
             </div>
+          </div>
+          <!-- popover-open показывает всплывающее окно. !-->
+          <div class="popover cart-empty">
+            <p>Ваша корзина пока пуста</p>
           </div>
         </li>
       </ul>
@@ -209,12 +227,12 @@
           <ul class="filter-fillers-list list-reset">
             <li class="filter-fillers-item">
               <input class="filter-fillers-input visually-hidden" type="checkbox" name="filter-fillers-chocolate"
-                id="filter-fillers-chocolate" checked="">
+                id="filter-fillers-chocolate" checked>
               <label class="filter-label filter-label-check" for="filter-fillers-chocolate">шоколадные</label>
             </li>
             <li class="filter-fillers-item">
               <input class="filter-fillers-input visually-hidden" type="checkbox" name="filter-fillers-sugar"
-                id="filter-fillers-sugar" checked="">
+                id="filter-fillers-sugar" checked>
               <label class="filter-label filter-label-check" for="filter-fillers-sugar">сахарные посыпки</label>
             </li>
             <li class="filter-fillers-item">
@@ -266,7 +284,7 @@
               <img src="images/catalog/ice-2.jpg" width="168" height="168" alt="Мороженное Фисташка.">
             </div>
             <h3 class="product-name">Фисташка</h3>
-            <p class="product-desc">Фисташковый пломбир с кусочками шоколада</p>
+            <p class="product-desc">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
             <div class="product-card-wrapper">
               <span class="product-price">340 ₽/кг</span>
               <a class="product-card" href="#">
@@ -286,7 +304,7 @@
               <img src="images/catalog/ice-3.jpg" width="168" height="168" alt="Мороженное Черника.">
             </div>
             <h3 class="product-name">Черника</h3>
-            <p class="product-desc">Крем-брюле с черничным джемом</p>
+            <p class="product-desc">Крем-брюле с&nbsp;черничным джемом</p>
             <div class="product-card-wrapper">
               <span class="product-price">330 ₽/кг</span>
               <a class="product-card" href="#">
@@ -306,7 +324,7 @@
               <img src="images/catalog/ice-4.jpg" width="168" height="168" alt="Мороженное Бабл-гам<.">
             </div>
             <h3 class="product-name">Бабл-гам</h3>
-            <p class="product-desc">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="product-desc">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
             <div class="product-card-wrapper">
               <span class="product-price">320 ₽/кг</span>
               <a class="product-card" href="#">
@@ -326,7 +344,7 @@
               <img src="images/catalog/ice-5.jpg" width="168" height="168" alt="Мороженное Ежевика.">
             </div>
             <h3 class="product-name">Ежевика</h3>
-            <p class="product-desc">Сливочное мороженое с ежевичным джемом</p>
+            <p class="product-desc">Сливочное мороженое с&nbsp;ежевичным джемом</p>
             <div class="product-card-wrapper">
               <span class="product-price">330 ₽/кг</span>
               <a class="product-card" href="#">
@@ -346,7 +364,7 @@
               <img src="images/catalog/ice-6.jpg" width="168" height="168" alt="Мороженное Банан.">
             </div>
             <h3 class="product-name">Банан</h3>
-            <p class="product-desc">Сливочный пломбир с банановым вкусом</p>
+            <p class="product-desc">Сливочный пломбир с&nbsp;банановым вкусом</p>
             <div class="product-card-wrapper">
               <span class="product-price">340 ₽/кг</span>
               <a class="product-card" href="#">
@@ -386,7 +404,7 @@
               <img src="images/catalog/ice-8.jpg" width="168" height="168" alt="Мороженное Клубничка.">
             </div>
             <h3 class="product-name">Клубничка</h3>
-            <p class="product-desc">Сливочный пломбир с клубничным вкусом</p>
+            <p class="product-desc">Сливочный пломбир с&nbsp;клубничным вкусом</p>
             <div class="product-card-wrapper">
               <span class="product-price">300 ₽/кг</span>
               <a class="product-card" href="#">
@@ -426,7 +444,7 @@
               <img src="images/catalog/ice-10.jpg" width="168" height="168" alt="Мороженное Ментол.">
             </div>
             <h3 class="product-name">Ментол</h3>
-            <p class="product-desc">Сливочный пломбир с ментоловым сиропом</p>
+            <p class="product-desc">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
             <div class="product-card-wrapper">
               <span class="product-price">320 ₽/кг</span>
               <a class="product-card" href="#">
@@ -446,7 +464,7 @@
               <img src="images/catalog/ice-11.jpg" width="168" height="168" alt="Мороженное Орешек.">
             </div>
             <h3 class="product-name">Орешек</h3>
-            <p class="product-desc">Фисташковый пломбир с шоколадным сиропом</p>
+            <p class="product-desc">Фисташковый пломбир с&nbsp;шоколадным сиропом</p>
             <div class="product-card-wrapper">
               <span class="product-price">360 ₽/кг</span>
               <a class="product-card" href="#">
@@ -466,7 +484,7 @@
               <img src="images/catalog/ice-12.jpg" width="168" height="168" alt="Мороженное Крем-брюле.">
             </div>
             <h3 class="product-name">Крем-брюле</h3>
-            <p class="product-desc">Классическое крем-брюле</p>
+            <p class="product-desc">Классическое крем&#8209;брюле</p>
             <div class="product-card-wrapper">
               <span class="product-price">280 ₽/кг</span>
               <a class="product-card" href="#">
@@ -563,13 +581,15 @@
 
     <div class="copyright">
       <a class="copyright-logo" href="https://htmlacademy.ru/">
-        <img src="images/icon/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy">
+        <svg aria-hidden="true" focusable="false" width="93" height="27" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 10.416v2.083h1.988v-2.083H0ZM9.419 3.663c-1.262 0-2.282.573-2.922 1.406h-.069V0H4.786v12.5h1.642V8.212c0-1.72 1.072-2.952 2.645-2.952 1.486 0 2.35 1.111 2.35 2.604V12.5h1.643V7.57c0-2.38-1.47-3.907-3.647-3.907ZM21.525 3.906h-3.889V.868h-1.642v3.038H14.44v1.597h1.555v4.844c0 1.389.778 2.153 2.178 2.153h3.353v-1.615h-3.024c-.554 0-.865-.312-.865-.85V5.503h3.89V3.906ZM33.255 3.68c-1.314 0-2.316.643-2.87 1.667h-.051c-.502-1.007-1.435-1.666-2.714-1.666-1.14 0-2.005.607-2.523 1.458h-.07V3.906h-1.572V12.5h1.642V8.09c0-1.614.846-2.795 2.126-2.83 1.21-.034 1.918.834 1.918 2.136V12.5h1.642V7.95c0-1.927 1.14-2.69 2.126-2.69 1.193 0 1.901.833 1.901 2.135V12.5h1.642V7.222c0-2.083-1.175-3.541-3.197-3.541ZM38.678 10.277c0 1.407.795 2.223 2.264 2.223h1.624v-1.598h-1.382c-.553 0-.865-.312-.865-.85V0h-1.641v10.277ZM23.375 15.936h-.069c-.64-.863-1.68-1.467-3.065-1.484-2.545-.034-4.363 1.847-4.363 4.505 0 2.675 1.852 4.556 4.346 4.521 1.42-.017 2.441-.655 3.082-1.57h.07v1.329h1.627v-8.543h-1.628v1.242Zm-2.909 5.955c-1.8 0-2.943-1.312-2.943-2.934 0-1.623 1.143-2.934 2.943-2.934 1.75 0 2.892 1.311 2.892 2.934 0 1.605-1.143 2.934-2.892 2.934ZM35.752 17.8c-.398-1.933-2.113-3.348-4.363-3.348-2.719 0-4.537 1.985-4.537 4.505 0 2.52 1.818 4.521 4.537 4.521 2.25 0 3.965-1.45 4.363-3.4h-1.714c-.346 1.088-1.368 1.83-2.632 1.83-1.766 0-2.91-1.33-2.91-2.951 0-1.623 1.144-2.934 2.91-2.934 1.316 0 2.285.776 2.632 1.777h1.714ZM44.546 15.936h-.07c-.64-.863-1.679-1.467-3.064-1.484-2.546-.034-4.364 1.847-4.364 4.505 0 2.675 1.853 4.556 4.346 4.521 1.42-.017 2.442-.655 3.083-1.57h.069v1.329h1.627v-8.543h-1.627v1.242Zm-2.91 5.955c-1.8 0-2.943-1.312-2.943-2.934 0-1.623 1.143-2.934 2.944-2.934 1.749 0 2.892 1.311 2.892 2.934 0 1.605-1.143 2.934-2.892 2.934ZM55.52 16.023h-.07c-.64-.915-1.714-1.554-3.081-1.57-2.494-.035-4.346 1.846-4.346 4.52 0 2.659 1.818 4.54 4.363 4.506 1.35-.018 2.424-.622 3.048-1.485h.086v1.243h1.628V10.81H55.52v5.212Zm-2.909 5.885c-1.8 0-2.944-1.312-2.944-2.934s1.143-2.934 2.944-2.934c1.75 0 2.892 1.329 2.892 2.934 0 1.622-1.143 2.934-2.892 2.934ZM63.345 14.452c-2.632 0-4.433 2.02-4.433 4.522 0 2.433 1.697 4.505 4.467 4.505 2.009 0 3.62-1.088 4.19-2.9h-1.713c-.381.811-1.299 1.329-2.407 1.329-1.558 0-2.667-1.036-2.788-2.364h7.082c.225-2.848-1.558-5.092-4.398-5.092Zm-.035 1.57c1.368 0 2.39.846 2.65 2.072h-5.264c.242-1.208 1.264-2.071 2.614-2.071ZM79.413 14.47c-1.316 0-2.32.638-2.875 1.656h-.052c-.502-1-1.437-1.657-2.718-1.657-1.143 0-2.009.604-2.528 1.45h-.07v-1.225h-1.575v8.543h1.645v-4.384c0-1.605.848-2.779 2.13-2.813 1.212-.035 1.922.828 1.922 2.123v5.074h1.645v-4.522c0-1.916 1.142-2.675 2.13-2.675 1.194 0 1.904.828 1.904 2.123v5.074h1.645V17.99c0-2.071-1.177-3.52-3.203-3.52ZM88.505 21.873l-2.944-7.18h-1.818l3.913 9.355-.017.034c-.277.708-.589.967-1.35.967h-2.026v1.64h2.025c1.49 0 2.286-.674 2.84-2.124l3.775-9.872h-1.68l-2.718 7.18Z" />
+        </svg>
       </a>
       <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
     </div>
   </footer>
-
-  <script src="js/script.js"></script>
 
 </body>
 
