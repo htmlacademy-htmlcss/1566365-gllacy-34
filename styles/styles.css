@@ -171,8 +171,9 @@ img {
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
 
-.navigation-list-drop-open {
-  display: block;
+.navigation-item-drop:hover .navigation-list-drop,
+.navigation-item-drop:focus-within .navigation-list-drop {
+    display: block;
 }
 
 .navigation-list-drop h3 {
@@ -401,7 +402,7 @@ img {
   border-radius: 4px;
 }
 
-.navigation-user-link-current + .navigation-user-container {
+.navigation-user-container-open {
   display: block;
 }
 
